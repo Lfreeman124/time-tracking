@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+/* QUICK RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* TYPOGRAPHY */
+  /* font family */
+  --ff-rubik: "Rubik", sans-serif;
+
+  /* font size */
+  --fs-normal: 1.8rem;
+
+  /* font weight */
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-bold: 500;
+
+  /* COLORS */
+  /* primary */
+  --clr-blue: hsl(246, 80%, 60%);
+  --clr-blue-soft: hsl(195, 74%, 62%);
+  --clr-red-light: hsl(15, 100%, 70%);
+  --clr-green-lime: hsl(145, 58%, 55%);
+  --clr-violet: hsl(264, 64%, 52%);
+  --clr-orange-soft: hsl(43, 84%, 65%);
+
+  /* neutral */
+  --clr-blue-very-dark: hsl(226, 43%, 10%);
+  --clr-blue-dark: hsl(235, 46%, 20%);
+  --clr-blue-des: hsl(235, 45%, 61%);
+  --clr-blue-pale: hsl(236, 100%, 87%);
+}
+
+/* GLOBALS */
+body {
+  /* background-color: var(--clr-blue); */
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TYPOGRAPHY */
+
+/* LAYOUT */
+.container {
+  width: 80%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.user-container {
+  grid-row: 1 / 3;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+}
