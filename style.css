@@ -41,7 +41,7 @@
 
 /* GLOBALS */
 body {
-  /* background-color: var(--clr-blue); */
+  background-color: var(--clr-blue-very-dark);
 }
 
 main {
@@ -70,4 +70,8 @@ main {
 .category {
   display: flex;
   justify-content: space-between;
+}
+
+.category-container {
+  background-color: var(--clr-blue-dark);
 }
